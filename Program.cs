@@ -45,3 +45,9 @@ string[] SortArray(string[] arr1)
     }
     return arr2;
 }
+
+string[] arr = CreateArray();
+string[] sortArr = SortArray(arr);
+PrintArray(arr);
+Console.Write(" -> ");
+PrintArray(sortArr);
