@@ -22,3 +22,26 @@ string[] CreateArray()
     }
     return array;
 }
+
+string[] SortArray(string[] arr1)
+{
+    int count = 0;
+    int k = 0;
+    for (int i = 0; i < arr1.Length; i++)
+    {
+        if (arr1[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    string[] arr2 = new string[count];
+    for (int i = 0; i < arr1.Length; i++)
+    {
+        if (arr1[i].Length <= 3)
+        {
+            arr2[k] = arr1[i];
+            k++;
+        }
+    }
+    return arr2;
+}
